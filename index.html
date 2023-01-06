@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="app">
+                <div
+                    class="search_bar d-flex align-items-center justify-content-center position-relative"
+                >
+                    <div class="search_by_location position-absolute">
+                        <b>search by location</b>
+                    </div>
+                    <div class="search_by_cordinates position-absolute">
+                        <b>search by cordinates</b>
+                    </div>
+                    <div
+                        id="search-location-container"
+                        class="m-md-3 d-flex m-5 p-3 justify-content-center"
+                    >
+                        <input type="search" name="" id="search-location" />
+                        <div class="font">
+                            <img src="/search.png" alt="" width="15px" id="location-img"/>
+                        </div>
+                    </div>
+                    <div
+                        id="search-zipcode-container"
+                        class="m-md-3 d-flex m-5 p-3 justify-content-center"
+                    >
+                        <input type="search" name="" id="search-zipcode" />
+                        <div class="font">
+                            <img src="/search.png" alt="" width="15px" id="zipcode-img" />
+                        </div>
+                    </div>
+                </div>
+                <div class="m-5 d-grid info">
+                    <div class="location_name m-2 contents">
+                        Location: london
+                    </div>
+                    <div class="m-2 temp contents">Temperature: 12°c</div>
+                    <div class="m-2 winds contents">Winds: 9.8m/s</div>
+                    <div class="m-2 humidity contents">Humidity: 76%</div>
+                    <div class="m-2 dewpoint contents">Dewpoint: 8°c</div>
+                    <div class="m-2 climate contents">Climate: Sunny</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"
+></script>
+<script src="/script.js"></script>

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+body {}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/josh-hild-OpkZfKoYHFE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 450px;
+    min-height: 500px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    backdrop-filter: blur();
+    background: rgba(255, 255, 255, 0.2);
+    border: 0px;
+    width: 150px;
+    box-shadow: darkgrey 0 0 15px 5px;
+    margin-right: 10px;
+}
+
+.search_by_location {
+    top: 0%;
+    left: 8%;
+}
+
+.search_by_cordinates {
+    top: 0%;
+    left: 57%
+}
+
+@media only screen and (max-width:767px) {
+    .search_by_location {
+        top: -9%;
+        left: 5%;
+    }
+
+    .search_by_cordinates {
+        top: -9%;
+        left: 53%;
+    }
+
+    #search-location-container {
+        margin: 0px !important;
+    }
+
+    #search-zipcode-container {
+        margin: 0px !important;
+    }
+}
+
+.info {
+    backdrop-filter: blur();
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.contents {
+    background-color: rgba(190, 237, 255, 0.309);
+    text-align: center;
+    border-radius: 5px;
+}
+img:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
