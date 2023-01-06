@@ -55,10 +55,10 @@ input {
 } */
 
 @media only screen and (max-width:767px) {
-    .search_by_location {
+   .search_by_location {
         top: -9%;
-        left: 5%;
-    }
+        left: 10%;
+    }}
 
     .search_by_cordinates {
         top: -9%;
