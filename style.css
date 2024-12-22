@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     overflow-y: hidden;
-  
 }
 
-body {}
+body {
+    min-height: 100vh;
+}
 
 .container {
     width: 100vw;
@@ -32,50 +33,46 @@ body {}
 }
 
 input {
-    backdrop-filter: blur();
+    backdrop-filter: blur(5px);
     background: rgba(255, 255, 255, 0.2);
     border: 2px solid black;
     width: 150px;
     box-shadow: rgb(52, 52, 52) 0 0 15px 5px;
     margin-right: 10px;
-    padding:0 10px;
+    padding: 0 10px;
     font-size: larger;
     font-weight: bolder;
     height: auto;
 }
 
 .search_by_location {
-    top: 0%;  text-transform: capitalize;
+    top: 0%;
+    text-transform: capitalize;
     left: 17%;
 }
-/* 
-.search_by_cordinates {
-    top: 0%;
-    left: 57%
-} */
 
-@media only screen and (max-width:767px) {
-   .search_by_location {
+@media only screen and (max-width: 767px) {
+    .search_by_location {
         top: -9%;
         left: 10%;
-    }}
-
+    }
+    
     .search_by_cordinates {
         top: -9%;
         left: 53%;
     }
 
     #search-location-container {
-        margin: 0px !important;
+        margin: 0 !important;
     }
 
     #search-zipcode-container {
-        margin: 0px !important;
+        margin: 0 !important;
     }
 }
 
 .info {
-    backdrop-filter: blur();
+    backdrop-filter: blur(5px);
     background: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     visibility: hidden;
@@ -87,7 +84,8 @@ input {
     text-align: center;
     border-radius: 5px;
 }
-img:hover{
+
+img:hover {
     cursor: pointer;
     border: 1px solid white;
 }
